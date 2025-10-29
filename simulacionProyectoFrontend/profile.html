@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Perfil - English Academy</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img id="homeLogoBtn" alt="English Academy Logo" class="logo-img" src="src/img/LOGOEnglishAcademy.png" style="width: 150px; height: auto;" />
+    </div>
+    <div class="auth-section">
+      <button id="loginBtn" class="auth-button">Iniciar Sesión</button>
+      <div id="userProfile" class="user-profile hidden">
+        <div class="profile-trigger">
+          <img id="userProfileImg" alt="User Profile" class="profile-img" src="src/img/sinfoto.png" />
+          <span id="userName"></span>
+        </div>
+        <div id="profileMenu" class="profile-menu hidden">
+          <button id="viewProfileBtn">Mi Perfil</button>
+          <button id="myExamsBtn">Mis Exámenes</button>
+          <button id="myStatsBtn">Mis Estadísticas</button>
+          <button id="logoutBtn">Cerrar Sesión</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="profile-page">
+      <div class="profile-container">
+        <h2>Mi Perfil</h2>
+        <div class="profile-image-section">
+          <img id="profileImage" alt="Profile Picture" class="large-profile-img" src="src/img/sinfoto.png">
+          <input type="file" id="imageUpload" accept="image/*" style="display: none;">
+        </div>
+        <div class="profile-details">
+          <p><strong>Matrícula:</strong> <span id="profileMatricula"></span></p>
+          <p><strong>Nickname:</strong> <span id="profileNickname"></span></p>
+          <p><strong>Nombre:</strong> <span id="profileName"></span></p>
+          <p><strong>Apellido Paterno:</strong> <span id="profileLastName1"></span></p>
+          <p><strong>Apellido Materno:</strong> <span id="profileLastName2"></span></p>
+          <p><strong>Email:</strong> <span id="profileEmail"></span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="contact-info">
+        <h3>Contacto</h3>
+        <p>Email: info@englishacademy.com</p>
+        <p>Teléfono: (123) 456-7890</p>
+        <p>Dirección: Calle Principal #123, Saltiyork</p>
+      </div>
+    </div>
+  </footer>
+<script src="js/base.js"></script>
+<script src="js/profile.js"></script>
+</body>
+</html>

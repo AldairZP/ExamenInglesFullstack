@@ -1,0 +1,150 @@
+/* Estilos Globales y Comunes */
+:root {
+  --primary-color: #5A6D92;
+  --secondary-color: #D7A860;
+  --secundary-color-light:rgb(218, 219, 255);
+  --text-color: #1f2937;
+  --background-color: #F5F8FC;
+  --white: #ffffff;
+  --error-color: #ef4444;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 1.5rem;
+  background-color: var(--white);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+}
+
+.logo-img {
+  height: 50px;
+  width: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+  transform: scale(1.05);
+}
+
+/* Auth Section Styles */
+.auth-button {
+  padding: 0.5rem 1.5rem;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.auth-button:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-2px);
+  color: #222222;
+
+}
+
+.user-profile {
+  position: relative;
+}
+
+.profile-trigger {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.profile-trigger:hover {
+  background-color: var(--background-color);
+}
+
+.profile-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--primary-color);
+}
+
+.profile-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+  min-width: 200px;
+  margin-top: 0.5rem;
+}
+
+.profile-menu button {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  background: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.profile-menu button:hover {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+}
+
+/* Footer Styles */
+.site-footer {
+  background-color: var(--primary-color);
+  color: var(--white);
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.site-footer p {
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+.site-footer a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Utilidades */
+.hidden {
+  display: none;
+}

@@ -1,0 +1,15 @@
+
+
+services:
+  back:
+    container_name: simulacion-proyecto
+    build: .
+    image: aldairzp/simulacion-proyecto
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/usr/src/app
+    environment:
+      - DEBUG=True
+      - DJANGO_ALLOWED_HOSTS=localhost,127.0.0.1
+    restart: unless-stopped

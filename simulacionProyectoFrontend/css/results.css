@@ -1,0 +1,46 @@
+/* Estilos para la Página de Resultados */
+.results-page {
+  min-height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 2rem;
+  background-color: var(--background-color);
+  background: linear-gradient(to bottom, var(--secundary-color-light), var(--primary-color));
+}
+
+.results-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#resultsChart {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 2rem;
+}
+
+.result-item {
+  padding: 1rem;
+  background-color: var(--background-color);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.student-profile {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: var(--background-color);
+  border-radius: 8px;
+}
+
+.student-info {
+  flex: 1;
+}

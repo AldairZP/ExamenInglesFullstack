@@ -1,0 +1,96 @@
+/* Estilos de la Página de Exámenes */
+.exam-page {
+  min-height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 2rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../src/img/bg.webp');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.exam-title {
+  margin-bottom: 1rem;
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  max-width: 400px;
+  margin: auto;
+}
+
+.results-button {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.results-button:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-2px);
+  color: #222222;
+}
+
+.results-button:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.exam-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  padding: 0 1rem;
+}
+
+.exam-card {
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+  margin: auto;
+  position: relative;
+  width: 250px;
+}
+
+.exam-card:hover {
+  transform: translateY(-5px);
+  
+}
+
+.exam-button {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.exam-button:hover:not(:disabled) {
+  background-color: var(--secondary-color);
+  transform: translateY(-2px);
+  color: #222222;
+
+}
+
+.exam-button:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}

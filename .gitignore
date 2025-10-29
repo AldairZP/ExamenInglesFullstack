@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+
+# Entornos virtuales
+venv/
+.venv/
+env/
+ENV/
+
+# Build y empaquetado
+build/
+dist/
+*.egg-info/
+
+# Tests / coverage
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Sistema/IDE
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+*.code-workspace
+
+# Node (por si en el futuro se usa)
+node_modules/
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Variables de entorno (mantén .env.example)
+.env
+.env.*
+!.env.example
+
+# SQLite: mantener la base de datos, ignorar archivos transitorios
+*-journal
+*-wal
+*-shm
