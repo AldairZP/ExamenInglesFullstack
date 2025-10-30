@@ -34,11 +34,6 @@ npm-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# Variables de entorno (mantén .env.example)
-.env
-.env.*
-!.env.example
-
 # SQLite: mantener la base de datos, ignorar archivos transitorios
 *-journal
 *-wal
